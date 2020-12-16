@@ -33,15 +33,9 @@ function criaMaze(){
                 parede.id = 'parede'
                 labirinto.appendChild(parede)
             }
-            if(map[i][q] === ' ' || map[i][q] === 'F'){
+            if(map[i][q] === ' ' || map[i][q] === 'F' || map[i][q] === 'S'){
                 let piso = document.createElement('div')
                 piso.className = 'P' + i + q
-                piso.id = 'piso'
-                labirinto.appendChild(piso)
-            }
-            if(map[i][q] === 'S'){
-                let piso = document.createElement('div')
-                piso.className = 'P'
                 piso.id = 'piso'
                 labirinto.appendChild(piso)
             }
